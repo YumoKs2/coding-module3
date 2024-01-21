@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Carte Magique</title>
+    <link rel="stylesheet" href="CSS/page-connexion.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <!--Début de la boite qui va contenir nos contenants-->
+    <div class="englobe">
+
+        <!--Début du form-->
+        <form action="">
+
+            <!--Titre qui se trouve en haut-->
+            <h1>Connexion</h1>
+
+            <!--Div pour le cadre avec le nom d'user-->
+            <div class="zone-saisie">
+                <input type="text" placeholder="Nom d'utilisateur" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <!--Div pour le cadre avec le mot de passe-->
+            <div class="zone-saisie">
+                <input type="password" placeholder="Mot de passe" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+            <!--Case à cocher pour se souvenir de rester connecté-->
+            <div class="rappel-oublie">
+                <label>
+                    <input type="checkbox">Rester connecté
+                </label>
+                <!--Lien pour mot de passe oublié-->
+                <a href="#">Mot de passe oublié ?</a>
+            </div>
+
+            <!--Bouton pour se connecter-->
+            <button type="submit" class="btn">Se connecter</button>
+
+            <!--Lien pour crée un compte-->
+            <div class="lien-inscription">
+                <p>Pas encore de compte ?<a href="#"> Inscrivez-vous !</a></p>
+            </div>
+
+        </form>
+        <!--Fin du form-->
+    </div>
+    <!--Fin de la boite qui va contenir nos contenants-->
+
+</body>
+</html>
+
+<!--A faire :  ajouter du JS pour le login page, option de visibility ou de hidden pour le mot de passe + changement de couleur après envoi-->
