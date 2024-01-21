@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+:root {
+    --clr-dark: black;
+    --clr-light: #fcd1d7;
+    --clr-med: #e9b1cd;
+    --clr-pink: pink;
+}
+
+/*Début body*/
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--clr-light);
+    padding: 0;
+    margin: 0;
+    color: var(--clr-dark);
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+body .page {
+    margin: 20px 80px;
+}
+/*Fin body*/
+
+/*Début nav*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--clr-light);
+    padding: 10px 0px;
+}
+
+nav .onglet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+nav .onglet a {
+    margin-right: 20px;
+    cursor: pointer;
+    color: var(--clr-dark);
+    font-size: 20px;
+}
+
+.bouton {
+    font-family: 'Playfair Display', serif;
+    padding: 10px 20px;
+    color: var(--clr-dark);
+    border: none;
+    background-color: var(--clr-med);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav .bouton button {
+    font-family: 'Playfair Display', serif;
+    padding: 10px 20px;
+    color: var(--clr-dark);
+    border: none;
+    background-color: var(--clr-med);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.connexion {
+    padding: 10px 20px;
+    color: var(--clr-dark);
+    border: none;
+    background-color: var(--clr-med);
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+/*Fin nav*/
+
+/*Début dark mode*/
+.dark-mode {
+    --clr-dark: white;
+    --clr-light: #232524;
+    --clr-med: black;
+    --clr-pink: black;
+    --clr-deg: black;
+}
+
+.theme-toggle {
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+/*Fin dark mode*/
+
+/*Début explication*/
+.explica {
+    margin: 50px;
+    background-color: var(--clr-pink);
+    text-align: center;
+    padding: 15px;
+}
+/*Fin explication*/
+
+/*Début du slider*/
+.slider-1 {
+    max-width: 950px;
+    margin: auto;
+    overflow: hidden;
+  
+}
+
+.slider-1 .slider {
+    animation: slider-1 14s infinite ease-in-out;
+    display: flex;
+}
+
+.slider-1 p {
+    background: #000;
+    flex-shrink: 0;
+    padding: 72px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: #f1f1f1;
+}
+  
+.slider-1 img {
+    background: transparent;
+    flex-shrink: 0;
+    padding: 72px 0;
+    width: 100%;
+    font-size: 45px;
+}
+  
+@keyframes slider-1 {
+    0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
+  50%,
+  70% {
+    transform: translateX(-200%);
+  }
+  75%,
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+} 
+/*Fin du slider*/
+
+/*Début autre page*/
+.navpag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+}
+/*Fin autre page*/
+
+/*Début footer */
+footer {
+    background-color:var(--clr-med);
+    padding: 25px 100px;
+    color: var(--clr-dark);
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px 200px;
+}
+
+footer .colonnes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*Fin footer */
+
+/*Début responsive*/
+@media all and (max-device-width: 1050px) {
+
+    footer {
+        background-image: none;
+    }
+
+    .colonnes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img {
+        display: none;
+    }
+
+    .iim {
+        background: rgb(255, 201, 102);
+    }
+
+    .wwe {
+        background: rgb(255, 95, 95);
+    }
+
+    .julie {
+        background: rgb(255, 255, 113);
+    }
+
+    .ferhat {
+        background: rgb(108, 108, 255);
+    }
+
+    .sofiane {
+        background: rgb(160, 160, 160);
+    }
+
+    .league {
+        background:linear-gradient(45deg, rgba(41, 41, 255, 0.797), rgba(255, 255, 106, 0.721));
+    }
+    
+    .mew {
+        background: rgb(255, 227, 232);
+    }
+
+    .sailor {
+        background: rgb(181, 255, 154);
+    }
+
+    nav .onglet {
+        display: flex;
+        justify-content: left;
+    }
+
+    nav .bouton {
+        display: flex;
+        justify-content: right;
+    }
+}
+/*Fin responsive*/
